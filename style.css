@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f4f8;
+}
+
+/* new one starts here */
+.main-container {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* row-gap: 0.1rem; */
+  background-color: #ffffff; /* White */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.main-heading {
+  text-align: center;
+  background-color: #3e5976; /* Bright blue */
+  color: #ffffff; /* White text */
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0.7rem;
+}
+.main-heading h1 {
+  margin: 0.5rem;
+}
+span {
+  color: palevioletred;
+}
+.select-category {
+  display: flex;
+  flex-direction: column;
+  background-color: #e0e7ef; /* Light blue-gray, slightly darker than body */
+  border-radius: 0 0 10px 10px;
+}
+.row {
+  margin: 0.2rem 0;
+}
+.row-one {
+  display: flex;
+  justify-content: center;
+}
+
+.row-two,
+.row-three,
+.row-four {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0.2rem;
+}
+.row-four {
+  margin-bottom: 0.5rem;
+}
+button {
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 7.5rem;
+  margin: 0.1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+button:active {
+  transform: scale(0.95);
+}
+/* for smaller displays */
+@media screen and (min-width: 500px) {
+  .main-container {
+    width: 400px;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
